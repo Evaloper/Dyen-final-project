@@ -8,6 +8,8 @@
 
 body {
   font-family: 'Geologica', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 .flex {
@@ -57,4 +59,38 @@ body {
 
 .ml-50 {
   margin-left: 50px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+.pl-50 {
+  padding-left: 50px;
+}
+
+.pr-50 {
+  padding-right: 50px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #5F6164;
 }

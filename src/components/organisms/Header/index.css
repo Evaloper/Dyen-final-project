@@ -29,3 +29,16 @@
     border-radius: 50%;
     border: none;
 }
+
+.current-page {
+    color: #fff;
+}
+
+.btm-header {
+    border-top: 0.1px solid #5f616440;
+}
+
+.arrow-left {
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
