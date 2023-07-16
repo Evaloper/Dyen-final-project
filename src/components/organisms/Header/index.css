@@ -9,6 +9,9 @@
 
 .header-searchbar{
     margin-left: 50px;
+    position: relative;
+    left: 35px;
+    bottom: 3px;
 }
 
 .inp-header{
@@ -20,16 +23,9 @@
     background-color: #2C2F36;
 }
 
-.search-icon-svg{
-    position: absolute;
-    top: 28px;
-    padding-left: 10px;
-    
-}
-
 .profile-img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: none;
 }

@@ -9,7 +9,7 @@ export const Icon = (props) => {
         style={{
           pointerEvents: "none",
           display: "block",
-          width: "28px",
+          height: "17px",
           fill: "#777D81",
         }}
         {...props}
@@ -26,8 +26,6 @@ export const Icon = (props) => {
         style={{
           pointerEvents: "none",
           display: "block",
-          width: "100%",
-          height: "100%",
           fill: "#fff",
         }}
         {...props}
@@ -44,8 +42,6 @@ export const Icon = (props) => {
         style={{
           pointerEvents: "none",
           display: "block",
-          width: "100%",
-          height: "100%",
           fill: "#fff",
         }}
         {...props}
@@ -57,12 +53,40 @@ export const Icon = (props) => {
   if (props.name === "arrow-down")
     return (
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="1em"
-        viewBox="0 0 512 512"
+        className="style-scope tp-yt-iron-icon"
+        style={{
+          pointerEvents: "none",
+          display: "block",
+          width: "20px",
+          height: "20px",
+          fill: "#fff",
+        }}
+        viewBox="0 0 24 24"
         {...props}
       >
-        <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+        <g className="style-scope tp-yt-iron-icon">
+          <path
+            d="M12 15.7 5.6 9.4l.7-.7 5.6 5.6 5.6-5.6.7.7-6.2 6.3z"
+            className="style-scope tp-yt-iron-icon"
+          />
+        </g>
+      </svg>
+    );
+
+  if (props.name === "arrow-left")
+    return (
+      <svg
+        width={24}
+        height={24}
+        style={{
+          pointerEvents: "none",
+          display: "block",
+          width: "100%",
+          height: "100%",
+        }}
+        {...props}
+      >
+        <path d="M14.96 18.96 8 12l6.96-6.96.71.71L9.41 12l6.25 6.25-.7.71z" />
       </svg>
     );
 
