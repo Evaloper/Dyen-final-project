@@ -1,44 +1,136 @@
 .header {
-    background-color: #1F2125;
-    color: #fff;
+  background-color: #212328;
+  color: #fff;
 }
 
 .top-header {
-    padding-top: 20px;
+  padding-top: 20px;
+  margin: 0 50px;
 }
 
-.header-searchbar{
-    margin-left: 50px;
-    position: relative;
-    left: 35px;
-    bottom: 3px;
+.header-searchbar {
+  margin-left: 50px;
+  position: relative;
+  left: 35px;
+  bottom: 3px;
 }
 
-.inp-header{
-    width: 250px;
-    height: 35px;
-    border: none;
-    border-radius: 8px;
-    padding-left: 35px;
-    background-color: #2C2F36;
+.search-icon {
+  height: 17px;
+}
+
+.inp-header {
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 35px;
+  background-color: #2c2f36;
+}
+
+
+
+.number-of-notification {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: relative;
+  right: 25px;
+  bottom: 6px;
+  background-color: red;
+}
+
+.header-icon {
+  margin-right: 20px;
 }
 
 .profile-img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
 }
 
-.current-page {
-    color: #fff;
+.nav-section {
+  color: #82878c;
 }
 
-.btm-header {
-    border-top: 0.1px solid #5f616440;
+.overlay {
+    display: none;
 }
 
-.arrow-left {
-    border: 1px solid #fff;
-    border-radius: 50%;
+
+@media screen and (max-width: 780px) {
+  .top-header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .header-icon {
+    margin-right: 10px;
+  }
+
+  .number-of-notification {
+    right: 15px;
+  }
+  .header-searchbar {
+    margin-left: 5px;
+  }
+  .inp-header {
+    width: 200px;
+  }
+
+}
+
+@media screen and (max-width: 610px) {
+  .initials {
+    display: none;
+  }
+
+  .inp-header,
+  .header-searchbar,
+  .nav-section {
+    display: none;
+  }
+
+  .overlay {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #212328;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+  }
 }

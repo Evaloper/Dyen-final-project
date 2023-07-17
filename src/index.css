@@ -20,6 +20,10 @@ body {
   justify-content: space-between;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
 .align-centered {
   align-items: center;
   place-items: center;
@@ -53,6 +57,10 @@ body {
   margin-right: 20px;
 }
 
+.mr-25{
+  margin-right: 25px;
+}
+
 .mr-50 {
   margin-right: 50px;
 }
@@ -73,6 +81,10 @@ body {
   padding-top: 20px;
 }
 
+.pb-15{
+  padding-bottom: 15px;
+}
+
 .pb-20 {
   padding-bottom: 20px;
 }
@@ -89,8 +101,11 @@ body {
 }
 
 
-
 a {
   text-decoration: none;
   color: #5F6164;
+}
+
+a:focus, a:hover {
+  color: #f1f1f1;
 }
