@@ -64,7 +64,7 @@ export const Billing = () => {
                   <thead>
                     <tr className=" table-head align-left">
                       <th className="table-head-data">Description</th>
-                      <th className="table-head-data align-right">QTY</th>
+                      <th className="table-head-data qty align-right">QTY</th>
                       <th className="table-head-data tbody-data-price">
                         Price
                       </th>
