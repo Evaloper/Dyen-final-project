@@ -429,8 +429,12 @@
 }
 
 .invoice-btn-right {
-  @media screen and (min-width: 500px) and (max-width: 768px) {
+  @media screen and (min-width: 500px) and (max-width: 700px) {
     position: relative;
     top: 32px;
+  }
+  @media screen and (min-width: 664px) and (max-width: 700px) {
+    position: relative;
+    top: 50px;
   }
 }
