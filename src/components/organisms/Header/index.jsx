@@ -69,7 +69,7 @@ export const Header = () => {
           <a href="#" className="mr-20">
             Payments
           </a>
-          <a href="#" className="mr-20">
+          <a href="#" className="current-page mr-20">
             Billings
           </a>
           <a href="#" className="mr-20">
