@@ -5,6 +5,11 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
+
+  @media screen and (max-width: 500px) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .txt-icon-para_date {
@@ -33,8 +38,11 @@
 }
 .slider-icon-div {
   font-weight: 300;
-  @media screen and (min-width: 420px) and (max-width: 768px) {
+  @media screen and (min-width: 500px) and (max-width: 768px) {
     font-size: 12px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 10px;
   }
 
 
