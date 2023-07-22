@@ -33,9 +33,9 @@ export const Billing = () => {
                 <span className="span-due-para"> Due next month</span>
               </div>
               <div className="section1-para2 flex">
-                <button className="send-invoice-btn btn">Send invoice</button>
-                <button className="edit-invoice-btn btn">Edit invoice</button>
-                <button className="add-note-btn btn">Add note</button>
+                <a href="#"><button className="send-invoice-btn btn">Send invoice</button></a>
+                <a href="#"><button className="edit-invoice-btn btn">Edit invoice</button></a>
+                <a href="#"><button className="add-note-btn btn">Add note</button></a>
               </div>
             </div>
             <div className="section2">
@@ -159,7 +159,7 @@ export const Billing = () => {
                   </div>
                 </div>
                 <div className="btn-div">
-                  <button className="invoice-btn">Invoice PDF</button>
+                  <a href="#"><button className="invoice-btn">Invoice PDF</button></a>
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@ export const Billing = () => {
                   anytime.
                 </p>
                 <div>
-                  <button className="invoice-btn invoice-btn-right">Ask a question</button>
+                  <a href="#"><button className="invoice-btn invoice-btn-right">Ask a question</button></a>
                 </div>
               </div>
             </div>
