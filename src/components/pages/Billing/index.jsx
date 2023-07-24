@@ -59,7 +59,7 @@ export const Billing = () => {
                   <TextIcon type="slider-txt" />
                 </div>
               </div>
-              <div>
+              <div className="overflow-x">
                 <table className="width-100">
                   <thead>
                     <tr className=" table-head align-left">
@@ -131,7 +131,7 @@ export const Billing = () => {
                       <td className="table-body-data align-right tbody-data-amount">
                         550.53$
                       </td>
-                      <td className="table-body-data align-right">
+                      <td className="table-body-data t-body-data-btm align-right">
                         <Icon name="more" />
                       </td>
                     </tr>
