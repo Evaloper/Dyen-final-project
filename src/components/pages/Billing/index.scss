@@ -71,6 +71,10 @@
     // box-shadow: 1px 3px 8px -8px #888888;
     border: 1px solid #0000000a;
 
+    @media screen and (min-width: 280px) and (max-width: 500px) {
+      padding: 30px 20px;
+    }
+
     .top-section {
       .section1-header {
         font-size: 22px;
@@ -216,6 +220,10 @@
     // box-shadow: 1px 3px 8px -8px #888888;
     border: 1px solid #0000000a;
 
+    @media screen and (min-width: 280px) and (max-width: 500px) {
+      padding: 30px 20px;
+    }
+
     .section2-header {
       font-size: 22px;
       font-weight: 600;
@@ -243,7 +251,11 @@
     @media screen and (min-width: 500px) and (max-width: 700px) {
       font-size: 10px;
     }
+    
 
+    @media screen and (min-width: 280px) and (max-width: 500px) {
+      padding: 30px 20px;
+    }
     // @media screen and (min-width: 280px) and (max-width: 500px) {
     //   display: none;
     // }
@@ -344,6 +356,10 @@
     @media screen and (min-width: 500px) and (max-width: 700px) {
       width: 49%;
     }
+
+    @media screen and (min-width: 280px) and (max-width: 500px) {
+      padding: 30px 20px;
+    }
   }
 
   .right-section1-header {
@@ -375,6 +391,10 @@
     @media screen and (min-width: 500px) and (max-width: 700px) {
       width: 49%;
       margin-top: 0;
+    }
+
+    @media screen and (min-width: 280px) and (max-width: 500px) {
+      padding: 30px 20px;
     }
 
     .number {
