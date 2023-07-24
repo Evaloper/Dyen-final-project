@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Header } from "../../organisms";
 import { Icon, Image } from "../../atoms";
 import "./index.scss";
@@ -11,7 +12,7 @@ export const Billing = () => {
       <div className="billing-main">
         <div className="flex align-centered btm-header pt-20 pb-90">
           <div className="arrow-left">
-            <Icon name="arrow-left" />
+            <Link to={"/"}><Icon name="arrow-left" /></Link>
           </div>
           <p className="arrow-left-para">Back to invoices</p>
         </div>

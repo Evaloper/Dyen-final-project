@@ -1,5 +1,7 @@
 import React from "react";
 import { Logo, Icon } from "../../atoms";
+import { Link } from "react-router-dom";
+import { Home } from "../../pages/Home";
 import "./index.css";
 
 export const Header = () => {
@@ -49,13 +51,13 @@ export const Header = () => {
                     </a>
                   </div>
                   <div className="overlay-content">
-                    <a href="#">Home</a>
-                    <a href="#">Payments</a>
-                    <a href="#">Billings</a>
-                    <a href="#">Balances</a>
-                    <a href="#">Customers</a>
-                    <a href="#">Products</a>
-                    <a href="#">Reports</a>
+                    <Link to={"/"}>Home</Link>
+                    <Link to={"/payments"}>Payments</Link>
+                    <Link to={"/billing"}>Billings</Link>
+                    <Link to={"/balances"}>Balances</Link>
+                    <Link to={"/customers"}>Customers</Link>
+                    <Link to={"/products"}>Products</Link>
+                    <Link to={"/reports"}>Reports</Link>
                   </div>
                 </div>
               </div>
@@ -63,27 +65,27 @@ export const Header = () => {
           </div>
         </div>
         <nav className="mt-20 ml-50 mr-50 nav-section">
-          <a href="#" className="mr-20">
+          <Link to={"/"} className="mr-20">
             Home
-          </a>
-          <a href="#" className="mr-20">
+          </Link>
+          <Link to={"/payments"} className="mr-20">
             Payments
-          </a>
-          <a href="#" className="current-page mr-20">
+          </Link>
+          <Link to={"/billing"} className="current-page mr-20">
             Billings
-          </a>
-          <a href="#" className="mr-20">
+          </Link>
+          <Link to={"/balances"} className="mr-20">
             Balances
-          </a>
-          <a href="#" className="mr-20">
+          </Link>
+          <Link to={"/customers"} className="mr-20">
             Customers
-          </a>
-          <a href="#" className="mr-20">
+          </Link>
+          <Link to={"/Products"} className="mr-20">
             Products
-          </a>
-          <a href="#" className="mr-20">
+          </Link>
+          <Link to={"/Reports"} className="mr-20">
             Reports
-          </a>
+          </Link>
         </nav>
       </div>
     </div>
