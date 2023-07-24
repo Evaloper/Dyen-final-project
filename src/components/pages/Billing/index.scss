@@ -284,7 +284,7 @@
   .qty{
 
     @media screen and (min-width: 280px) and (max-width: 500px) {
-      padding-left: 10px;
+      // padding-left: 10px;
     }
   }
 
@@ -296,35 +296,38 @@
 
 .table-body-data {
   padding-bottom: 20px;
+  padding-right: 30px;
 }
 
 .tbody-data-price {
-  padding-left: 30px;
+  // padding-left: 30px;
+  // padding-right: 30px;
   text-align: right;
 
   @media screen and (min-width: 500px) and (max-width: 768px) {
     padding-left: 15px;
-    padding-right: 5px;
+    padding-right: 15px;
     text-align: left;
   }
 
   @media screen and (min-width: 280px) and (max-width: 500px) {
     padding-left: 20px;
-  }
-}
-
-.tbody-data-amount {
-  padding-right: 90px;
-
-  @media screen and (min-width: 500px) and (max-width: 768px) {
-    padding-right: 10px;
-  }
-
-  @media screen and (min-width: 280px) and (max-width: 500px) {
     padding-right: 20px;
-    padding-left: 20px;
   }
 }
+
+// .tbody-data-amount {
+//   padding-right: 90px;
+
+//   @media screen and (min-width: 500px) and (max-width: 768px) {
+//     padding-right: 10px;
+//   }
+
+//   @media screen and (min-width: 280px) and (max-width: 500px) {
+//     // padding-right: 20px;
+//     // padding-left: 20px;
+//   }
+// }
 
 .right-section {
   width: 35%;
