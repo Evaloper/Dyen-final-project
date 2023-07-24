@@ -63,15 +63,15 @@ export const Billing = () => {
                 <table className="width-100">
                   <thead>
                     <tr className=" table-head align-left">
-                      <th className="table-head-data">Description</th>
+                      <th className="table-head-data table-head-data1">Description</th>
                       <th className="table-head-data qty align-right">QTY</th>
                       <th className="table-head-data tbody-data-price">
                         Price
                       </th>
-                      <th className="table-head-data align-right tbody-data-amount">
+                      <th className="table-head-data align-right table-head-amount">
                         Total amount
                       </th>
-                      <th className="table-head-data"></th>
+                      <th className="table-head-data table-head-data-last"></th>
                     </tr>
                   </thead>
                   <tbody>

@@ -292,11 +292,29 @@
     padding-bottom: 35px;
     font-weight: 300;
   }
+
+  .table-head-data1 {
+    @media screen and (min-width: 280px) and (max-width: 500px) {
+      padding-right: 150px;
+    }
+  }
+
+  .table-head-amount{
+    @media screen and (min-width: 280px) and (max-width: 500px) {
+      padding-left: 30px;
+    }
+  }
+
+  .table-head-data-last {
+    @media screen and (min-width: 280px) and (max-width: 500px) {
+      padding-left: 50px;
+    }
+  }
 }
 
 .table-body-data {
   padding-bottom: 20px;
-  padding-right: 30px;
+  // padding-right: 30px;
 }
 
 .tbody-data-price {
@@ -316,18 +334,7 @@
   }
 }
 
-// .tbody-data-amount {
-//   padding-right: 90px;
 
-//   @media screen and (min-width: 500px) and (max-width: 768px) {
-//     padding-right: 10px;
-//   }
-
-//   @media screen and (min-width: 280px) and (max-width: 500px) {
-//     // padding-right: 20px;
-//     // padding-left: 20px;
-//   }
-// }
 
 .right-section {
   width: 35%;
