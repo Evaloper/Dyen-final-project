@@ -71,7 +71,7 @@ export const Header = () => {
           <Link to={"/payments"} className="mr-20">
             Payments
           </Link>
-          <Link to={"/billing"} className="current-page mr-20">
+          <Link to={"/billing"} className="mr-20">
             Billings
           </Link>
           <Link to={"/balances"} className="mr-20">
