@@ -1,10 +1,11 @@
 import React from 'react'
-import { Header } from '../../organisms'
+import { PageTemplate } from '../../templates/PageTemplate'
+
 
 export const Home = () => {
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <PageTemplate />
+    </>
   )
 }

@@ -1,10 +1,10 @@
-import React from 'react'
-import { Header } from '../../organisms'
+import React from "react";
+import { PageTemplate } from "../../templates/PageTemplate";
 
 export const Payments = () => {
   return (
-    <div>
-      <Header />
-    </div>
-  )
-}
+    <PageTemplate>
+      <p>Payments</p>
+    </PageTemplate>
+  );
+};

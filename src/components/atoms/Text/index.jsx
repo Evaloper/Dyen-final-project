@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export const Text = (props) => {
-  if(props.type === "p") {
-    return(
-      <p className={props.className}>{props.text}</p>
-    );
+export const Text = ({ type, className, children }) => {
+  if (type === "p") {
+    return <p className={className}>{children}</p>;
   }
-  return (
-    <div>null</div>
-  )
-}
+  if (type === "h3") {
+    return <h3 className={className}>{children}</h3>;
+  }
+
+  return <span className={className}>{children}</span>;
+};

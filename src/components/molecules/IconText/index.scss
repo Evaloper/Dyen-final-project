@@ -16,22 +16,19 @@
   .txt-icon-para {
     margin-bottom: 5px;
     font-weight: 400;
-
   }
 
   .txt-icon-date {
     color: #82878c;
     font-weight: 300;
   }
-
- 
 }
 
 .slider-icon {
   .slider {
     width: 30px;
 
-    @media screen and (min-width: 420px) and (max-width: 768px){
+    @media screen and (min-width: 420px) and (max-width: 768px) {
       width: 22px;
     }
   }
@@ -44,44 +41,36 @@
   @media screen and (max-width: 500px) {
     font-size: 10px;
   }
-
-
 }
 
+.profile-img-div {
+  margin-top: 25px;
+  .profile-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+  }
 
-.profile-img-div{
-    margin-top: 25px;
-    .profile-image {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        border: none;
-      }
-
-      .profile-img-para {
-        font-weight: 400;
-      }
-
+  .profile-img-para {
+    font-weight: 400;
+  }
 }
 
-
-.envelope-div{
-
-    .envelope-para{
-        font-weight: 400;
-    }
+.envelope-div {
+  .envelope-para {
+    font-weight: 400;
+  }
 }
 
-.calendar-div{
-
-    .calendar-para{
-        font-weight: 400;
-    }
+.calendar-div {
+  .calendar-para {
+    font-weight: 400;
+  }
 }
 
-.hashtag-div{
-
-    .hashtag-para{
-        font-weight: 400;
-    }
+.hashtag-div {
+  .hashtag-para {
+    font-weight: 400;
+  }
 }

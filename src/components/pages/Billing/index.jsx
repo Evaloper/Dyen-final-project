@@ -1,31 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Header } from "../../organisms";
-import { Icon, Image } from "../../atoms";
+// import { Header } from "../../organisms";
+import { Icon, Text, Button } from "../../atoms";
 import "./index.scss";
-import { TextIcon } from "../../molecules/TextIcon";
+import { PageTemplate } from "../../templates/PageTemplate";
+import { AvatarText, IconText, IconText2 } from "../../molecules";
+import { Table } from "../../organisms/Table";
 
 export const Billing = () => {
   return (
-    <div>
-      <Header />
+    <PageTemplate>
       <div className="billing-main">
         <div className="flex align-centered btm-header pt-20 pb-90">
           <div className="arrow-left">
-            <Link to={"/"}><Icon name="arrow-left" /></Link>
+            <Link to={"/"}>
+              <Icon name="arrow-left" />
+            </Link>
           </div>
-          <p className="arrow-left-para">Back to invoices</p>
+          <Text className="arrow-left-para">Back to invoices</Text>
         </div>
         <div className="main-section space-between">
           <div className="left-section">
             <div className="section1">
               <div className="flex space-between top-section ">
-                <h3 className="section1-header">
+                <Text type="h3" className="section1-header">
                   Invoice <span className="blue-num">#42D42-0001 </span>
                   <span className="small-font">for</span> $2250.65
-                </h3>
+                </Text>
                 <div className="flex align-centered copy-icon">
-                  <Image name="copy-link" />
+                  <Icon name="copy-icon" className="link-icon" />
                   <p>Copy link</p>
                 </div>
               </div>
@@ -34,133 +37,80 @@ export const Billing = () => {
                 <span className="span-due-para"> Due next month</span>
               </div>
               <div className="section1-para2 flex">
-                <a href="#"><button className="send-invoice-btn btn">Send invoice</button></a>
-                <a href="#"><button className="edit-invoice-btn btn">Edit invoice</button></a>
-                <a href="#"><button className="add-note-btn btn">Add note</button></a>
+                <a href="#">
+                  <Button
+                    className="send-invoice-btn btn"
+                    text={"Send invoice"}
+                  />
+                </a>
+                <a href="#">
+                  <Button
+                    className="edit-invoice-btn btn"
+                    text={"Edit invoice"}
+                  />
+                </a>
+                <a href="#">
+                  <Button className="add-note-btn btn" text={"Add note"} />
+                </a>
               </div>
             </div>
             <div className="section2">
-              <h3 className="section2-header">History</h3>
+              <Text className="section2-header" type={"h3"}>
+                History
+              </Text>
               <div>
-                <div>
-                  <TextIcon type="mail-txt" />
-                </div>
-                <div>
-                  <TextIcon type="invoice-txt" />
-                </div>
-                <div>
-                  <TextIcon type="invoice-txt2" />
-                </div>
+                <IconText2
+                  name={"fill-white-mail"}
+                  text={"Invoice was sent to cloudnew@gmail.com"}
+                  text2={"Jul 2, 2023, 2:56 PM"}
+                />
+                <IconText2
+                  name={"fill-white-mail"}
+                  text={"Invoice was finalized"}
+                  text2={"Jul 2, 2023, 2:56 PM"}
+                />
+                <IconText2
+                  name={"fill-white-mail"}
+                  text={"Invoice #42D42-0001 was Created"}
+                  text2={"Jul 2, 2023, 2:56 PM"}
+                />
               </div>
             </div>
             <div className="section3 mt-25">
               <div className="flex space-between align-centered section3-div">
-                <h3 className="section3-div-header">Items</h3>
+                <Text className="section3-div-header" type={"h3"}>
+                  Items
+                </Text>
                 <div className="customize">
-                  <TextIcon type="slider-txt" />
+                  <IconText
+                    name="slider"
+                    className="slider slider-icon-para txt-primary-color"
+                    text={"Customize columns"}
+                  />
                 </div>
               </div>
-              <div className="overflow-x">
-                <table className="width-100">
-                  <thead>
-                    <tr className=" table-head align-left">
-                      <th className="table-head-data table-head-data1">Description</th>
-                      <th className="table-head-data qty align-right">QTY</th>
-                      <th className="table-head-data tbody-data-price">
-                        Price
-                      </th>
-                      <th className="table-head-data align-right table-head-amount">
-                        Total amount
-                      </th>
-                      <th className="table-head-data table-head-data-last"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="table-body body-data1 ">
-                      <td className="table-body-data">
-                        UX/UI Design for mobile app
-                      </td>
-                      <td className="table-body-data align-right">1</td>
-                      <td className="table-body-data align-right tbody-data-price">
-                        1150.52$
-                      </td>
-                      <td className="table-body-data align-right  tbody-data-amount">
-                        1150.52$
-                      </td>
-                      <td className="table-body-data align-right">
-                        <Icon name="more" />
-                      </td>
-                    </tr>
-                    <tr className="table-body body-data2">
-                      <td className="table-body-data">
-                        UX/UI Design for Landing page
-                      </td>
-                      <td className="table-body-data align-right">1</td>
-                      <td className="table-body-data align-right  tbody-data-price">
-                        550.53$
-                      </td>
-                      <td className="table-body-data align-right tbody-data-amount">
-                        550.53$
-                      </td>
-                      <td className="table-body-data align-right">
-                        <Icon name="more" />
-                      </td>
-                    </tr>
-                    <tr className="table-body body-data1 ">
-                      <td className="table-body-data">
-                        Product Design for mobile app
-                      </td>
-                      <td className="table-body-data align-right">1</td>
-                      <td className="table-body-data align-right tbody-data-price">
-                        1150.52$
-                      </td>
-                      <td className="table-body-data align-right tbody-data-amount">
-                        1150.52$
-                      </td>
-                      <td className="table-body-data align-right">
-                        <Icon name="more" />
-                      </td>
-                    </tr>
-                    <tr className="table-body body-data2">
-                      <td className="table-body-data">
-                        Branding for Landing page
-                      </td>
-                      <td className="table-body-data align-right">1</td>
-                      <td className="table-body-data align-right tbody-data-price">
-                        550.53$
-                      </td>
-                      <td className="table-body-data align-right tbody-data-amount">
-                        550.53$
-                      </td>
-                      <td className="table-body-data t-body-data-btm align-right">
-                        <Icon name="more" />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <Table />
             </div>
           </div>
           <div className="right-section">
             <div className="right-section1">
               <div>
-                <h3 className="right-section1-header">Details</h3>
+                <Text className="right-section1-header" type={"h3"}>
+                  Details
+                </Text>
                 <div className="right-section-texticon">
-                  <div>
-                    <TextIcon type="profileImage-txt" />
-                  </div>
-                  <div>
-                    <TextIcon type="envelope-txt" />
-                  </div>
-                  <div>
-                    <TextIcon type="calendar-txt" />
-                  </div>
-                  <div>
-                    <TextIcon type="hashtag-txt" />
-                  </div>
+                  <AvatarText
+                    src="https://yt3.ggpht.com/yti/AOXPAcWKgOiWQoWF2k8EWq25k0X9K0lUFd129XXkcWPqFCM=s88-c-k-c0x00ffffff-no-rj-mo"
+                    text="Cloud Newton"
+                  />
+                  <IconText name="mail" text="claudnew@gmail.com" />
+                  <IconText name="calendar" text="Aug 5, 3:16 AM" />
+                  <IconText name="hashtag" text="#42D42-0001" />
                 </div>
                 <div className="btn-div">
-                  <a href="#"><button className="invoice-btn">Invoice PDF</button></a>
+                  <a href="#">
+                    <Button className="invoice-btn" text={"Invoice PDF"} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -168,19 +118,26 @@ export const Billing = () => {
               <div>
                 <div className="number">24</div>
                 <div className="div-after-number"></div>
-                <h3 className="right-section2-header mt-20">Ask us</h3>
-                <p className="mt-15">
+                <Text type="h3" className="right-section2-header mt-20">
+                  Ask us
+                </Text>
+                <Text className="mt-15" type={"p"}>
                   If you have a question or encounter a problem, we can help you
                   anytime.
-                </p>
+                </Text>
                 <div>
-                  <a href="#"><button className="invoice-btn invoice-btn-right">Ask a question</button></a>
+                  <a href="#">
+                    <Button
+                      className="invoice-btn invoice-btn-right"
+                      text={"Ask a question"}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </PageTemplate>
   );
 };
