@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import {
@@ -17,7 +16,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
-
   {
     path: "/payments",
     element: <Payments />,
@@ -27,7 +25,6 @@ const router = createBrowserRouter([
     path: "/billing",
     element: <Billing />,
   },
-
   {
     path: "/balances",
     element: <Balances />,

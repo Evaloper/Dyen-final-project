@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Header } from "../../organisms";
 import { Icon, Text, Button } from "../../atoms";
 import "./index.scss";
 import { PageTemplate } from "../../templates/PageTemplate";
