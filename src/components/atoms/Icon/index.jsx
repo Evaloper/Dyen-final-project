@@ -5,7 +5,7 @@ export const Icon = (props) => {
     return (
       <svg
         width={24}
-        height={24}
+        height={17}
         style={{
           pointerEvents: "none",
           display: "block",
