@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.scss";
 import { Icon } from "../../atoms";
 
 const data = [
@@ -35,14 +34,14 @@ const data = [
 
 // const TableHeaderCell = styled.th``;
 
-export const Table = ({}) => {
+export const Table = ({ }) => {
   return (
     <div className="overflow-x">
-      <table className="table">
+      <table className="bg-white rounded-xl w-full text-sm max-[500px]:text-base max-[700px]:text-sm">
         <thead>
-          <tr className="table-head align-left">
+          <tr className="text-left text-[#82878c]">
             {Object.keys(data[0]).map((val, key) => (
-              <th key={key} className="table-head-data tbody-data-Price">
+              <th key={key} className="pb-5 font-light pr-3.5 max-[500px]:pr-5 tbody-data-Price">
                 {val}
               </th>
             ))}
@@ -50,12 +49,12 @@ export const Table = ({}) => {
         </thead>
         <tbody>
           {data.map((val, key) => (
-            <tr key={key} className="table-body body-data1">
-              <td className="table-body-data">{val.Description}</td>
-              <td className="table-body-data text-centered qty">{val.Qty}</td>
-              <td className="table-body-data tbody-data-Price">{val.Price}</td>
-              <td className="table-body-data tbody-data-amount">{val.Total}</td>
-              <td className="table-body-data align-right">
+            <tr key={key} className="">
+              <td className="pb-5 pr-4 max-[500px]:pr-5">{val.Description}</td>
+              <td className="pb-5 pr-4 max-[500px]:pr-5 text-center">{val.Qty}</td>
+              <td className="pb-5 pr-4 max-[500px]:pr-5 min-[280px]:pr-5 min-[500px]:pr-3.5 min-[500px]:text-left min-[768px]:pr-3.5 min-[768px]:text-left">{val.Price}</td>
+              <td className="pb-5 pr-4 max-[500px]:pr-5">{val.Total}</td>
+              <td className="pb-5 pr-4 max-[500px]:pr-5 text-right">
                 <Icon name="more" />
               </td>
             </tr>

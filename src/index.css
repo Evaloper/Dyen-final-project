@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -7,29 +10,28 @@
 }
 
 body {
-  font-family: 'Geologica', sans-serif;
+  font-family: "Geologica", sans-serif;
   font-size: 16px;
   font-weight: 400;
-
 }
 
-@media screen and (min-width: 400px) and (max-width: 768px){
-  body{
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  body {
     font-size: 16px;
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 400px){
-  body{
+@media screen and (min-width: 280px) and (max-width: 400px) {
+  body {
     font-size: 14px;
   }
 }
 
-.width-100{
+.width-100 {
   width: 100%;
 }
 
-.txt-primary-color{
+.txt-primary-color {
   color: #6681e8;
 }
 
@@ -45,7 +47,7 @@ body {
   justify-content: space-around;
 }
 
-.justify-centered{
+.justify-centered {
   justify-content: center;
 }
 
@@ -54,11 +56,11 @@ body {
   place-items: center;
 }
 
-.align-left{
+.align-left {
   text-align: left;
 }
 
-.align-right{
+.align-right {
   text-align: right;
 }
 
@@ -74,10 +76,6 @@ body {
   margin: auto;
 }
 
-.mr-5{
-  margin-right: 5px;
-}
-
 .mr-10 {
   margin-right: 10px;
 }
@@ -90,11 +88,11 @@ body {
   margin-left: 20px;
 }
 
-.mr-20 {
+/* .mr-20 {
   margin-right: 20px;
-}
+} */
 
-.mr-25{
+.mr-25 {
   margin-right: 25px;
 }
 
@@ -106,7 +104,7 @@ body {
   margin-left: 50px;
 }
 
-.mt-15{
+.mt-15 {
   margin-top: 15px;
 }
 
@@ -138,7 +136,7 @@ body {
   padding-top: 20px;
 }
 
-.pb-15{
+.pb-15 {
   padding-bottom: 15px;
 }
 
@@ -147,7 +145,6 @@ body {
 }
 
 .pb-90 {
-  
   padding-bottom: 90px;
 }
 .pl-30 {
@@ -170,13 +167,13 @@ body {
   padding-right: 90px;
 }
 
-
 a {
   text-decoration: none;
-  color: #abadae;;
+  color: #abadae;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   color: #f1f1f1;
 }
 

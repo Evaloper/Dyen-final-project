@@ -6,7 +6,7 @@ export const IconText = ({ name, text, className }) => {
   return (
     <div
       className={className}
-      style={{ display: "flex", alignItems: "center", marginTop: "25px" }}
+      style={{ display: "flex", alignItems: "center" }}
     >
       <Icon name={name} className={className} />
       <span
